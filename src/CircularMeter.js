@@ -2,9 +2,9 @@
   React component to render an animated circular meter.
   Simply pass in the value, title and CSS color code to the component, e.g.,
 
-  CircularMeter val={ 58 } title={ "Progress" } color={ '#000' }
+  CircularMeter val={ 58 } title={ "Progress" } color={ "#000" }
 
-  Tested on Chrome. Implemented using SVG with CSS transition:
+  Tested on Firefox and Chrome. Implemented using SVG with CSS transition:
   https://www.smashingmagazine.com/2015/07/designing-simple-pie-charts-with-css
 
   Text animation uses JavaScript.
