@@ -1,5 +1,6 @@
 @transition-length: 1s;
 @inset-color: #f9f9f9;
+@track-color: #fff;
 
 .circular-chart {
 	display: inline-block;
@@ -35,7 +36,7 @@ svg {
 }
 
 .pie {
-  fill: #fff;
+  fill: @track-color;
   stroke-width: 24;
   animation-fill-mode: forwards;
   transition: @transition-length linear all;
