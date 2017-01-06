@@ -69,12 +69,15 @@ const CircularMeter = React.createClass({
   render () {
     return (
       <div class="circular-chart">
-        <svg viewBox="0 0 32 32">
-          <circle r="16" cx="16" cy="16" class="pie"
+        <svg viewBox="0 0 40 40">
+          <circle r="20" cx="20" cy="20"
+            stroke={ this.props.color }
+            fill="none" />
+          <circle r="16" cx="20" cy="20" class="pie"
             strokeDasharray={ this.state.val + ' 100' }
             stroke={ this.props.color }
             onTransitionEnd={ this.stopAnim }/>
-          <circle r="12" cx="16" cy="16" class="inset" />
+          <circle r="14" cx="20" cy="20" class="inset" />
         </svg>
         <div class="counter">{ Math.round(this.state.textProgress) + '%'}</div>
         <div class="title">{ this.props.title }</div>
