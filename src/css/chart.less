@@ -1,0 +1,41 @@
+@transition-length: 1s;
+@inset-color: #f9f9f9;
+
+.circular-chart {
+	display: inline-block;
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 12px;
+	margin: 10px 15px;
+	position: relative;
+}
+
+.counter {
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.title {
+	margin-top: 20px;
+}
+
+svg {
+  width: 100px; height: 100px;
+  transform: rotate(-90deg);
+  border-radius: 50%;
+}
+
+.inset {
+  fill: @inset-color;
+}
+
+.pie {
+  fill: #eee;
+  stroke-width: 32;
+  animation-fill-mode: forwards;
+  transition: @transition-length linear all;
+}
